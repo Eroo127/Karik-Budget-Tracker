@@ -1,0 +1,31 @@
+page-home {
+
+    a{
+        font-size: 18px;
+        color: black;
+        font-family:Tahoma, Geneva, sans-serif;
+	    font-weight:lighter;
+        text-align: center;
+    }
+
+    .icons{
+        margin: 10px;
+        padding-left: 10px;
+        font-size: 64px;
+        color: green;       
+    }
+
+    .icon-row{
+         margin-top:50px;
+    }
+
+    ion-row{
+       
+        padding: 0px, 10px, 10px, 10px;
+    }
+
+     ion-col{
+        padding: 10px, 10px, 10px, 10px;
+    }
+
+}

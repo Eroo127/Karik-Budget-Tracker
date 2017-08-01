@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Goals
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-grid class = "form">
+    <ion-row>
+      <ion-col no-padding>
+        <ion-list>
+
+          <h1>ADD A GOAL</h1>
+          <form >
+             
+            <ion-row>
+              <ion-col no-padding>
+                <ion-item>
+                  <ion-label for="name" floating>Name</ion-label>
+                  <ion-input type="text" [(ngModel)]="name" name="name" id="name" ></ion-input>
+                </ion-item>
+
+               
+                <ion-item>
+                  <ion-label for="period" floating >Total Costs</ion-label>
+                  <ion-input type="text" [(ngModel)]="period"  name="period" id="period"></ion-input>
+                </ion-item>
+               
+               <ion-item>
+                  <ion-label for="period" floating >Saving</ion-label>
+                  <ion-input type="text" [(ngModel)]="period"  name="period" id="period"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label for="period" floating >Period</ion-label>
+                  <ion-input type="text" [(ngModel)]="period"  name="period" id="period"></ion-input>
+                </ion-item>
+
+
+             
+                <br/>
+                <button ion-button (click)="register()" block type="submit" color="secondary" outline>Add A Goal</button>
+                <br/>
+
+              </ion-col>
+            </ion-row>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+<h1>MY GOALS</h1>
+
+<ion-grid class = "table">
+  <ion-row class = "heading table">
+    
+    <ion-col col-3>
+      NAME
+    </ion-col>
+
+    <ion-col col-3>
+      TOTAL COST
+    </ion-col>
+
+    <ion-col col-3>
+      SAVINGS
+    </ion-col>
+
+    <ion-col col-3>
+      PERIOD
+    </ion-col>
+
+  </ion-row>  
+
+</ion-grid>
+</ion-content>

@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+<ion-grid>
+  <ion-row >
+    
+    <ion-col col-6>
+      <a [navPush]="paymentPage"><ion-icon name="pie" class= "icons"></ion-icon></a>
+    </ion-col>
+
+    <ion-col col-6>
+      <a [navPush]="aboutPage"><ion-icon name="list-box" class= "icons" id = "right" ></ion-icon></a>
+    </ion-col>
+
+  </ion-row>
+  
+  <ion-row>
+    <ion-col col-6><a color = "Secondary">Make a Payment</a></ion-col>
+    <ion-col col-6><a color = "Secondary">My Categories</a></ion-col>
+  </ion-row>
+
+ <ion-row>
+    <a>  <br />  </a>
+  </ion-row>
+  
+  <ion-row class= "icon-row">
+    
+    <ion-col col-6>
+      <a [navPush]="feedingPage"><ion-icon name="logo-usd" class= "icons"></ion-icon></a>
+    </ion-col>
+
+    <ion-col col-6>
+      <a [navPush]="feedingSchedulePage"><ion-icon name="beer" class= "icons"></ion-icon></a>
+    </ion-col>
+
+  </ion-row>
+  
+  <ion-row>
+    <ion-col col-6><a color = "Secondary">My Income</a></ion-col>
+    <ion-col col-6><a color = "Secondary">My Expenses</a></ion-col>
+  </ion-row>
+
+  <ion-row>
+    <a>  <br />  </a>
+  </ion-row>
+
+  <ion-row class= "icon-row">
+    
+    <ion-col col-6>
+      <a [navPush]="securityPage"><ion-icon name="apps" class= "icons"></ion-icon></a>
+    </ion-col>
+
+    <ion-col col-6>
+      <a [navPush]="goalPage"><ion-icon name="car" class= "icons"></ion-icon></a>
+    </ion-col>
+
+  </ion-row >
+  
+  <ion-row>
+    <ion-col col-6><a color = "Secondary">My Budget</a></ion-col>
+    <ion-col col-6><a color = "Secondary">My Goals</a></ion-col>
+  </ion-row>
+
+  <ion-row>
+    <a>  <br />  </a>
+  </ion-row>
+</ion-grid>
+ 
+ 
+  <!--h3>Ionic Menu Starter</h3>
+
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p-->
+
+  <!--button ion-button secondary menuToggle>Toggle Menu</button-->
+</ion-content>

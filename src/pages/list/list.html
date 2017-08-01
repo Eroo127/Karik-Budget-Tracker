@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add an Income</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col no-padding>
+        <ion-list>
+          <form >
+             
+            <ion-row>
+              <ion-col no-padding>
+                <ion-item>
+                  <ion-label for="name" floating>Name</ion-label>
+                  <ion-input type="text" [(ngModel)]="name" name="name" id="name" ></ion-input>
+                </ion-item>
+               
+                <ion-item>
+                  <ion-label for="source" floating >Source</ion-label>
+                  <ion-input type="text" [(ngModel)]="source"  name="source" id="source"></ion-input>
+                </ion-item>
+               
+                <ion-item>
+                  <ion-label for="period" floating >Period</ion-label>
+                  <ion-input type="text" [(ngModel)]="period"  name="period" id="period"></ion-input>
+                </ion-item>
+             
+               <ion-item>
+                  <ion-label for="amount" floating >Amount</ion-label>
+                  <ion-input type="number" [(ngModel)]="amount"  name="amount" id="amount"></ion-input>
+                </ion-item>
+               
+
+
+             
+                <br/>
+                <button ion-button block type="submit" color="secondary" outline>Add Income</button>
+                <br/>
+
+              </ion-col>
+            </ion-row>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
